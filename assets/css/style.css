@@ -48,8 +48,6 @@ header .container-headline h2 {
     text-align: center;
 }
 
-
-
 /* --main--navbar--- */
 
 .container-navbar {
@@ -60,7 +58,6 @@ header .container-headline h2 {
     position: sticky;
     top: 0;
     padding-top: 2vh;
-
 }
 
 nav a {
@@ -93,8 +90,6 @@ section .story-headline h2 {
     font-weight: 100;
     color: #fff;
     padding-bottom: 8vh;
-
-
 }
 
 section .story-headline p {
@@ -149,7 +144,6 @@ figure figcaption {
 
 .video-container {
     padding-top: 56.25%;
-
 }
 
 iframe {
@@ -188,7 +182,28 @@ section:nth-of-type(2) form {
     margin-top: 10vh;
 }
 
-/* footer and formular */
+/* formular */
+
+form label {
+    color: white;
+    font-family: 'Lora', serif;
+    font-size: 1.5rem;
+}
+
+form input::placeholder {
+    font-family: 'Work Sans', sans-serif;
+    font-size: xx-small;
+    padding: 2%;
+
+}
+
+form button {
+    font-family: 'Work Sans', sans-serif;
+    padding: 2%;
+    margin-top: 1.5rem;
+}
+
+/* footer */
 
 footer {
     display: flex;
@@ -205,21 +220,22 @@ footer a {
     margin-right: 40px
 }
 
-
-/* media queries */
+/* **************************************************************** */
+/* ************************ media queries ************************* */
+/* **************************************************************** */
 
 @media only screen and (max-width: 600px) {
-
 
     /* --header--- */
     header {
         display: block;
         margin: 10vh;
-        padding: 20%;
+        /* padding: 20%; */
     }
 
     header img {
-        max-width: 200px;
+        max-width: 488px;
+        margin-top: 5vh;
     }
 
     header h1 {
@@ -273,7 +289,7 @@ footer a {
 
     section:nth-of-type(1) img {
         width: 90%;
-        margin-left: 17px;
+        margin-left: 27px;
         display: block;
     }
 
@@ -283,14 +299,11 @@ footer a {
 
     section img {
         margin: 0vh 0% 10vh 0;
-
     }
 
     /* featured section */
 
     .article-container {
-        /* display: flex;
-        justify-content: space-evenly; */
         margin-top: 10vh;
         display: inline-block;
     }
@@ -318,6 +331,38 @@ footer a {
 
     iframe {
         max-width: 420px;
+    }
 
+    section:nth-of-type(2) {
+        display: block;
+    }
+
+    section:nth-of-type(2) h2 {
+        padding: 8vh 0;
+    }
+
+    section:nth-of-type(2) p {
+        padding-right: 10%;
+    }
+
+    form label {
+        display: block;
+        font-size: x-small;
+        margin-top: 1vh;
+    }
+
+    form button {
+        display: block;
+    }
+
+    form {
+        font-size: 1rem;
+        padding: 2px;
+    }
+
+    footer {
+        display: block;
+        font-size: 1rem;
+        padding: 10vh 10% 10vh 10%;
     }
 }
